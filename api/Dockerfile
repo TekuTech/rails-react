@@ -1,5 +1,7 @@
 FROM ruby:2.7
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+# Ruby2.7の変更によってWarningが出るのを消しておく
+ENV RUBYOPT='-W:no-deprecated -W:no-experimental'
 RUN mkdir /app
 WORKDIR /app
 COPY Gemfile /app/Gemfile
