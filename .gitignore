@@ -10,6 +10,7 @@ api/storage/*
 api/storage/.keep
 api/.byebug_history
 api/config/master.key
+api/vendor/bundle
 
 front/react-app/node_modules
 front/react-app/.pnp
